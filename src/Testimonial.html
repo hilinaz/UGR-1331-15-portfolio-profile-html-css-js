@@ -4,25 +4,39 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Testimonial</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
    <!-- navbar -->
     <header>
-      <nav class="Home_nav">
+       <nav class="Home_nav">
         <div>
-          <img src="image/Logo.png" alt="A personal logo">
-          <button class="toggler-btn">
+          <ul class="sidebar">
+            <li class="toggle"> <button class="toggler-btn">
          <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
-          </button>
-        </div>
-        <div>
-          <ul class="nav_links">
+          </button></li>
             <li><a href="Home.html">Home</a></li>
             <li><a href="About_me.html">About me</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Hobbies.html">Hobbies</a></li>
             <li><a href="Testimonial.html">Testimonial</a></li>
             <li><a href="Contact_me.html">Contact me</a></li>
+
+          </ul>
+
+          <ul class="normal_nav">
+            <li> <img src="image/Logo.png" alt="A personal logo" class="logo" /></li>
+            <div class="pages">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About_me.html">About me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Contact_me.html">Contact me</a></li>
+            </div>
+            <li> <button class="toggler-btn">
+         <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
+          </button></li>
           </ul>
         </div>
       </nav>
@@ -30,7 +44,7 @@
     <!-- End navbar -->
 
     <main class="Main_Test">
-      <section class="people test">
+      <section class="people_test">
       <div class="test_header">
         <h1>What Others Are Saying</h1>
         <p>
@@ -44,40 +58,49 @@
       <div class="carousel">
         <article class="Testimonial">
           <div class="test_img">
-            <img src="image/Test.jpg" alt="Image of Co-worker">
+            <img src="image/Test.jpg" alt="Image of Co-worker" id="test_img">
           </div>
-          <h4>Suraphel Nega</h4>
+           <div class="Testimonial_btn">
+            <button class="prev-btn test_btn" aria-label="back-button">
+           <img src="image/Icons/prev.svg" alt="prev-icon" width="24" height="24">
+            </button>
+          
+          <div>
+          <h4 class="test_name">Suraphel Nega</h4>
           <h5>Software Developer</h5>
-          <p>
+          <p id="test_para">
             Working with Hilina is a blast! She combines creativity and tech
             skills to make tough problems look easy, all while keeping the team
             motivated and hitting deadlines with the brightest smile.
-          </p>
-          <div class="Testimonial_btn">
-            <button class="prev-btn" aria-label="back-button">
-           <img src="image/Icons/prev.svg" alt="prev-icon" width="24" height="24">
-            </button>
-            <button class="next-btn" aria-label="forward-button">
+          </p></div>
+          <button class="next-btn test_btn" aria-label="forward-button">
              <img src="image/Icons/next.svg" alt="next-icon" width="24" height="24">
-            </button>
-          </div>
+            </button></div>
+         
         </article>
       </div>
 </section>
       <!-- moving img section -->
       <section class="test_certifications">
         <div class="certificate_text">
-          <h5>Verified Achievements</h5>
+          <h2>Verified Achievements</h2>
           <h6>
             Check out the certifications and badges that prove my skills and
             keep me growing!
           </h6>
         </div>
         <div class="certificates">
-          <img
+          <img class="certificate_img"
             src="image/Udacity_certificate.jpg"
             alt="Certification from Udacity">
-          <img src="image/Azure.jpg" alt="Azure Fundamentals certificate">
+          <img src="image/Azure.jpg" alt="Azure Fundamentals certificate" class="certificate_img">
+          <img src="image/Badge1.png"   alt="badge earned while learning the fundamentals of azure" class="certificate_img">
+           <img src="image/canva certificate.png" alt=" Certification earned form canva a designning platform" class="certificate_img">
+          
+          <img src="image/badge 2.png" alt="badge earned while learning the fundamentals of azure" class="certificate_img">
+          
+        
+         
         </div>
       </section>
     </main>
@@ -140,5 +163,6 @@
         </ul>
       </div>
     </footer>
+    <script src="new.js"> </script>
   </body>
 </html>

@@ -4,25 +4,39 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Contact me</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- navbar -->
     <header>
-      <nav class="Home_nav">
+       <nav class="Home_nav">
         <div>
-          <img src="image/Logo.png" alt="A personal logo">
-          <button class="toggler-btn">
+          <ul class="sidebar">
+            <li class="toggle"> <button class="toggler-btn">
          <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
-          </button>
-        </div>
-        <div>
-          <ul class="nav_links">
+          </button></li>
             <li><a href="Home.html">Home</a></li>
             <li><a href="About_me.html">About me</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Hobbies.html">Hobbies</a></li>
             <li><a href="Testimonial.html">Testimonial</a></li>
             <li><a href="Contact_me.html">Contact me</a></li>
+
+          </ul>
+
+          <ul class="normal_nav">
+            <li> <img src="image/Logo.png" alt="A personal logo" class="logo" /></li>
+            <div class="pages">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About_me.html">About me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Contact_me.html">Contact me</a></li>
+            </div>
+            <li> <button class="toggler-btn">
+         <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
+          </button></li>
           </ul>
         </div>
       </nav>
@@ -31,7 +45,7 @@
 
     <main class="Main_Contact">
       <div class="contact_text">
-        <h2>Get in Touch!</h2>
+        <h1>Get in Touch!</h1>
         <p>
           Got a project in mind or just want to chat? Reach out, and let's turn
           ideas into reality!
@@ -40,14 +54,14 @@
       <div class="Contact_info">
         <div class="Address">
          <img src="image/Icons/location.svg" alt="Location-logo" width="24" height="24">
-          <div class="Addree_text">
+          <div class="Addree_text contact_add">
             <h3>Address</h3>
             <p>4kilo ,Addis Ababa, Ethiopia</p>
           </div>
         </div>
         <div class="Call">
         <img src="image/Icons/call.svg" alt="call-logo" width="24" height="24">
-          <div class="call_text">
+          <div class="call_text contact_add">
             <h3>Call me</h3>
             <p>+251 966958448</p>
           </div>
@@ -55,13 +69,15 @@
 
         <div class="Email">
            <img src="image/Icons/email.svg" alt="email" width="24" height="24">
+           <div class="contact_add"> 
           <h3>Email me</h3>
-          <p>hiluzemedkun@gmail.co</p>
+          <p>hiluzemedkun@gmail.co</p></div>
         </div>
       </div>
 
       <div class="Contact_form">
         <form>
+          <div class="form_element">
           <div>
             <input
               type="text"
@@ -69,18 +85,14 @@
               placeholder="Your Name"
               required=""
             >
-          </div>
-          <div>
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required=""
             >
-          </div>
-          <div>
             <input type="text" name="subject" placeholder="Subject" >
-          </div>
+         </div>
           <div>
             <textarea
               name="message"
@@ -88,9 +100,11 @@
               rows="10"
               cols="50"
             ></textarea>
-          </div>
+          
           <div class="submit_btn">
             <button type="submit">Send Message</button>
+          </div>
+          </div>
           </div>
         </form>
       </div>
@@ -175,5 +189,6 @@
         </ul>
       </div>
     </footer>
+    <script src="new.js"></script>
   </body>
 </html>

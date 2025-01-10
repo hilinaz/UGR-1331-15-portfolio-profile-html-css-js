@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="homePage">
     <!-- navbar -->
     <header>
       <nav class="Home_nav">
         <div>
-          <img src="image/Logo.png" alt="A personal logo" >
-          <button class="toggler-btn">
-            <img
-              src="image/Icons/toggler.svg"
-              alt="Toggler-icon"
-              width="24"
-              height="24"
-            >
-          </button>
-        </div>
-        <div>
-          <ul class="nav_links">
+          <ul class="sidebar">
+            <li class="toggle"> <button class="toggler-btn">
+         <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
+          </button></li>
             <li><a href="Home.html">Home</a></li>
             <li><a href="About_me.html">About me</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Hobbies.html">Hobbies</a></li>
             <li><a href="Testimonial.html">Testimonial</a></li>
             <li><a href="Contact_me.html">Contact me</a></li>
+
+          </ul>
+
+          <ul class="normal_nav">
+            <li> <img src="image/Logo.png" alt="A personal logo" class="logo" /></li>
+            <div class="pages">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About_me.html">About me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Contact_me.html">Contact me</a></li>
+            </div>
+            <li> <button class="toggler-btn">
+         <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
+          </button></li>
           </ul>
         </div>
       </nav>
@@ -35,13 +44,13 @@
     <!-- End navbar -->
 
     <main class="Main_Home">
+     
       <div class="Home_text">
         <h1 class="home_H1">Hilina Zemedkun</h1>
         <h2 class="home_H2">Software Developer</h2>
         <p>
           Hi! I’m Hilina, a software developer who loves turning ideas into
-          code. From crafting clean apps to solving tricky problems, I’m all
-          about building tech that makes life easier and more exciting.
+          code. 
         </p>
       </div>
       <div class="social_container">
@@ -57,7 +66,7 @@
                 alt=" github-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
           <li>
@@ -71,7 +80,7 @@
                 alt="linkedin-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
 
@@ -86,7 +95,7 @@
                 alt="whatsapp-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
           <li>
@@ -100,7 +109,7 @@
                 alt="whatsapp-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
         </ul>
@@ -128,7 +137,7 @@
                 alt=" github-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
           <li>
@@ -142,7 +151,7 @@
                 alt="linkedin-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
 
@@ -157,7 +166,7 @@
                 alt="whatsapp-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
           <li>
@@ -171,7 +180,7 @@
                 alt="whatsapp-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
           <li>
@@ -185,11 +194,12 @@
                 alt="whatsapp-account-link"
                 width="24"
                 height="24"
-              >
+              />
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="new.js"></script>
   </body>
 </html>

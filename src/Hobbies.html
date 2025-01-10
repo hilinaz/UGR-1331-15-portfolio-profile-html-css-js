@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- navbar -->
     <header>
-      <nav class="Home_nav">
+        <nav class="Home_nav">
         <div>
-          <img src="image/Logo.png" alt="A personal logo">
-          <button class="toggler-btn">
+          <ul class="sidebar">
+            <li class="toggle"> <button class="toggler-btn">
          <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
-          </button>
-        </div>
-        <div>
-          <ul class="nav_links">
+          </button></li>
             <li><a href="Home.html">Home</a></li>
             <li><a href="About_me.html">About me</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Hobbies.html">Hobbies</a></li>
             <li><a href="Testimonial.html">Testimonial</a></li>
             <li><a href="Contact_me.html">Contact me</a></li>
+
+          </ul>
+
+          <ul class="normal_nav">
+            <li> <img src="image/Logo.png" alt="A personal logo" class="logo" /></li>
+            <div class="pages">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About_me.html">About me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Contact_me.html">Contact me</a></li>
+            </div>
+            <li> <button class="toggler-btn">
+         <img src="image/Icons/toggler.svg" alt="Toggler-icon" width="24" height="24">
+          </button></li>
           </ul>
         </div>
       </nav>
@@ -38,31 +52,31 @@
           passions keep me inspired and connected to the world around me.
         </p>
       </div>
-      <div class="Hobbies_bt">
-        <button class="books_btn">Books</button>
-        <button class="Adventure_btn">Adventures</button>
-        <button class="volunteer_btn">volunteering</button>
-        <button class="Music">Music</button>
+      <div class="Hobbies_buttons">
+        <button  class="Hobbies_bt" data-value="book">Books</button>
+        <button  class="Hobbies_bt" data-value="Adventures">Adventures</button>
+        <button  class="Hobbies_bt" data-value="volunteering">volunteering</button>
+        <button  class="Hobbies_bt" data-value="Music">Music </button>
       </div>
       <div class="Hobby_more">
         <div class="Hobby_vid">
           <figure>
-            <video controls>
-              <source src="Videos/Books.mp4" type="video/mp4">
+            <video controls id="Videos">
+              <source id="video_source" src="Videos/Books.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </figure>
         </div>
 
         <div class="hobby_sider">
-          <p class="About_Hobby">
+          <p class="About_Hobby " id="Hobby_info">
             Books are a gateway to endless worlds, where every page holds a new
             adventure. Through stories, we find connection, inspiration, and the
             freedom to dream.
           </p>
           <div class="hobby_image">
-            <img src="image/book.jpg" alt="Cover of My favourite book" >
-            <img src="image/book2.jpg" alt="Cover of my favourite book">
+            <img id="Hobbie_img1" src="image/book.jpg" alt="Cover of My favourite book" >
+            <img  id="Hobbie_img2" src="image/book2.jpg" alt="Cover of my favourite book">
           </div>
         </div>
       </div>
@@ -127,5 +141,6 @@
         </ul>
       </div>
     </footer>
+    <script src="new.js"></script>
   </body>
 </html>
